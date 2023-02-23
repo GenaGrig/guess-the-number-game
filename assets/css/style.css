@@ -16,7 +16,7 @@ body {
     padding: 20px 20px;
 }
 
-#user-guess {
+#player-input {
     width: 150px;
     border: 1px solid black;
     border-radius: 15px;
@@ -38,7 +38,7 @@ p {
     font-size: 16px;
 }
 
-#guess-number {
+.player-guess {
     font-size: 20px;
     font-weight: bolder;
 }

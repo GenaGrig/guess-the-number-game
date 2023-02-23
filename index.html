@@ -16,7 +16,7 @@
             <ul>
                 <li>Easy:   1 to 10 in 3 attempts</li>
                 <li>Medium: 1 to 100 in 10 attempts</li>
-                <li>Hard:   1 to 1000 in 15 attempts</li>
+                <li>Hard:   1 to 500 in 15 attempts</li>
             </ul>
             After every guess you will get a hint, if you number was less or higher than guessed by AI.
         </p>
@@ -29,10 +29,11 @@
     </div>
     <div id="input-field">
         <br>
-        <label for="user-guess" id="guess-number">Guess the number:</label>
-        <input type="number" min="1" max="1000" class="user-input" id="user-guess" placeholder="Enter your guess here" required>
+        <label for="player-guess"><span class="player-guess">Guess the number:</span></label>
+        <input type="number" min="1" max="1000" class="player-input" id="player-input" placeholder="Enter your guess here" required>
     </div>
     <div>
+        <p id="total-guesses"></p>
         <p id="last-guess"></p>
         <p id="less-or-more"></p>
     </div>
@@ -41,6 +42,6 @@
     </div>
 </section>
 
-    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
