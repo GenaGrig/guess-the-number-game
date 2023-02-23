@@ -57,6 +57,10 @@ p {
     width: 120px;
 }
 
+.submit-answer-btn {
+    margin-top: 20px;
+}
+
 .button-text {
     text-transform: uppercase;
     font-size: 18px;
