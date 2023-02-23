@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number game!</title>
+</head>
+<body>
+<section id="game-section">
+    <div>
+        <h1 id="game-title">Guess the number!</h1>
+        <h4>Rules:</h4>
+        <p>In this game you need to guess the random number, chosen by AI in different challenges.
+            <ul>
+                <li>1 to 10 in 3 attempts</li>
+                <li>1 to 100 in 10 attempts</li>
+                <li>1 to 1000 in 15 attempts</li>
+            </ul>
+            After every guess you will get a hint, if you number was less or higher than guessed by AI.
+        </p>
+        <h3>Choose difficulty:</h3>    
+    </div>
+    <div>
+        <button id="easy" class="btn">Easy</button>
+        <button id="medium" class="btn">Medium</button>
+        <button id="hard" class="btn">Hard</button>
+    </div>
+    <div id="input-field">
+        <br>
+        <label for="user-guess" id="guess">Guess the number:</label>
+        <input type="text" class="user-input" id="user-guess" placeholder="Enter your guess here" required>
+    </div>
+    <div>
+        <p id="last-guess"></p>
+        <p id="less-or-more"></p>
+    </div>
+    <div id="submit-button">
+        <button id="submit-answer">Check your answer</button>
+    </div>
+</section>
+
+    
+</body>
+</html>
