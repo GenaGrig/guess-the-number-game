@@ -23,16 +23,16 @@
         <h3 class="game-font-diff">Choose difficulty:</h3>    
     </div>
     <div id="game-diff-buttons">
-        <button id="easy" class="btn"><span class="button-text">Easy</span></button>
-        <button id="medium" class="btn"><span class="button-text">Medium</span></button>
-        <button id="hard" class="btn"><span class="button-text">Hard</span></button>
+        <button data-type="easy" id="easy" class="btn"><span class="button-text">Easy</span></button>
+        <button data-type="medium" id="medium" class="btn"><span class="button-text">Medium</span></button>
+        <button data-type="hard" id="hard" class="btn"><span class="button-text">Hard</span></button>
     </div>
     <div id="input-field">
         <br>
         <label for="player-guess"><span class="player-guess">Guess the number:</span></label>
-        <input type="number" min="1" max="1000" class="player-input" id="player-input" placeholder="Enter your guess here" required>
+        <input type="number" min="1" max="1000" class="player-input" id="player-input" placeholder="Guess here" required>
     </div>
-    <div>
+    <div class="hint-result-area">
         <p id="total-guesses"></p>
         <p id="last-guess"></p>
         <p id="less-or-more"></p>

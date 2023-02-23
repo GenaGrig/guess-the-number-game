@@ -21,6 +21,7 @@ body {
     border: 1px solid black;
     border-radius: 15px;
     padding: 10px 10px;
+    text-align: center;
 }
 
 h1 {
@@ -41,6 +42,7 @@ p {
 .player-guess {
     font-size: 20px;
     font-weight: bolder;
+    text-decoration: underline;
 }
 
 #game-diff-buttons,
@@ -96,4 +98,25 @@ p {
 .submit-answer-btn {
     padding: 10px 20px;
     border-radius: 25px;
+}
+
+.submit-answer-btn:hover {
+    background-color: rgb(212, 212, 212);
+    transition: 0.5s;
+}
+
+#total-guesses {
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+#last-guess {
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#less-or-more {
+    font-size: 20px;
+    text-align: center;
 }
