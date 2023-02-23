@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+
+body {
+    font-family: "Modern Antiqua", sans-serif;
+    background: url(../images/number-image.jpg);
+    color: white;
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#game-section {
+    background-color: rgba(18, 179, 219, 0.6);
+    width: 100%;
+    margin: 100px 0;
+    padding: 20px 20px;
+}
+
+#user-guess {
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#guess-number {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#game-diff-buttons,
+#submit-button,
+#input-field {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 25px;
+    width: 120px;
+}
+
+.button-text {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#easy {
+    background-color: lightgreen;
+}
+
+#easy:hover {
+    background-color: darkgreen;
+    transition: 0.5s;
+}
+
+#medium {
+    background-color: yellow;
+}
+
+#medium:hover {
+    background-color: darkorange;
+    transition: 0.5s;
+}
+
+#hard {
+    background-color: red;
+}
+
+#hard:hover {
+    background-color: darkred;
+    transition: 0.5s;
+}
+
+.submit-answer-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+}
