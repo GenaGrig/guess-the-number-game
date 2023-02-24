@@ -57,7 +57,7 @@ p {
     padding: 10px 20px;
     margin: 0 20px;
     border-radius: 25px;
-    width: 120px;
+    width: 130px;
 }
 
 .submit-answer-btn {
@@ -73,7 +73,7 @@ p {
     background-color: lightgreen;
 }
 
-#easy:hover {
+#easy-check:hover {
     background-color: darkgreen;
     transition: 0.5s;
 }
@@ -82,7 +82,7 @@ p {
     background-color: yellow;
 }
 
-#medium:hover {
+#medium-check:hover {
     background-color: darkorange;
     transition: 0.5s;
 }
@@ -91,8 +91,27 @@ p {
     background-color: red;
 }
 
-#hard:hover {
+#hard-check:hover {
     background-color: darkred;
+    transition: 0.5s;
+}
+
+#very-hard-check {
+    background-color: red;
+}
+
+#very-hard-check:hover {
+    background-color: darkred;
+    transition: 0.5s;
+}
+
+#new-game {
+    background-color: rgb(243, 29, 250);
+    width: 150px;
+}
+
+#new-game:hover {
+    background-color: rgb(148, 0, 123);
     transition: 0.5s;
 }
 

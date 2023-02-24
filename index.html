@@ -17,20 +17,19 @@
                 <li>Easy:   1 to 10 in 3 attempts</li>
                 <li>Medium: 1 to 100 in 10 attempts</li>
                 <li>Hard:   1 to 500 in 15 attempts</li>
+                <li>Hardest:   1 to 1000 in 15 attempts</li>
             </ul>
             After every guess you will get a hint, if you number was less or higher than guessed by AI.
         </p>
-        <h3 class="game-font-diff">Choose difficulty:</h3>    
+        <h3 class="game-font-diff">Choose difficulty (push to check your guess):</h3>    
     </div>
     <div id="game-diff-buttons">
-        <button onclick="checkNumberEasy()" id="easy" class="btn"><span class="button-text">Easy</span></button>
-        <button onclick="checkNumberMedium()" id="medium" class="btn"><span class="button-text">Medium</span></button>
-        <button onclick="checkNumberHard()" id="hard" class="btn"><span class="button-text">Hard</span></button>
-        <p id="current-difficulty"><h3>Check your guess:</h3><span id="show-difficulty"></span></p>
-        <button id="easy-check" class="btn">Easy</button>
-        <button id="medium-check" class="btn">Medium</button>
-        <button id="hard-check" class="btn">Hard</button>
-        <button id="new-game" class="btn" onclick="refreshPage()">New Game</button>
+        <button id="easy-check" class="btn"><span class="button-text">Easy</span></button>
+        <button id="medium-check" class="btn"><span class="button-text">Medium</span></button>
+        <button id="hard-check" class="btn"><span class="button-text">Hard</span></button>
+        <button id="very-hard-check" class="btn"><span class="button-text">Hardest</span></button>
+        <p><h3>Start New Game:</h3></p>
+        <button id="new-game" class="btn"><span class="button-text">New Game</span></button>
     </div>
     <div id="input-field">
         <br>
