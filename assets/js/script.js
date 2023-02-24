@@ -8,10 +8,11 @@ let totalGuesses = document.getElementById('total-guesses');
 let lastGuess = document.getElementById('last-guess');
 let lessOrMore = document.getElementById('less-or-more');
 let playerInput = document.getElementById('player-input');
-let playerCheck = document.getElementById('submit-answer')
+let playerCheck = document.getElementById('submit-button')
+let currentDifficulty = document.getElementById('show-difficulty');
 
 let guessCount = 1;
-let resetGame;
+let resetButton;
 
 function checkNumberEasy () {
     let playerGuess = Number(playerInput.value);
@@ -48,3 +49,8 @@ function checkNumberEasy () {
 }
 
 playerCheck.addEventListener('click', checkNumberEasy);
+
+function setGameOver() {
+    playerInput.disabled = true;
+    playerCheck.disabled = true;
+  }
