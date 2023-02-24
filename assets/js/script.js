@@ -28,10 +28,10 @@ function checkNumberEasy () {
         lessOrMore.textContent = '';
         setGameOver();
     } else if (guessCount === 3) {
-        lastGuess.textContent = "Your attempts are over! Try again!";
+        lastGuess.textContent = `Your attempts are over! Try again! The correct number is ${randomNumberEasy}`;
         setGameOver();
     } else {
-        lastGuess.textContent = "Nope! Next attempt!";
+        lastGuess.textContent = `Nope! Next attempt! You have ${3 - guessCount} guesses left!`;
         lastGuess.style.backgroundColor = 'red';
         if (playerGuess < randomNumberEasy) {
             lessOrMore.textContent = 'Your number was lower than guessed!';
