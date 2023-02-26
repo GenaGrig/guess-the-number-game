@@ -40,6 +40,11 @@ p {
     font-size: 16px;
 }
 
+.rules-center {
+    text-align: center;
+    font-size: 20px;
+}
+
 .player-guess {
     font-size: 20px;
     font-weight: bolder;
