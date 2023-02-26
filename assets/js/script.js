@@ -8,11 +8,14 @@ let totalGuesses = document.getElementById('total-guesses');
 let lastGuess = document.getElementById('last-guess');
 let lessOrMore = document.getElementById('less-or-more');
 let playerInput = document.getElementById('player-input');
-let playerCheck = document.getElementById('submit-button')
+let playerCheck = document.getElementById('submit-button');
 let easyCheck = document.getElementById('easy-check');
 let mediumCheck = document.getElementById('medium-check');
 let hardCheck = document.getElementById('hard-check');
 let veryHardCheck = document.getElementById('very-hard-check');
+let timeLeft = document.getElementById('countdown');
+let count = 16;
+let countdown;
 
 let guessCount = 1;
 let newGameButton = document.getElementById('new-game');
@@ -30,11 +33,13 @@ function checkNumberEasy () {
         lastGuess.textContent = "Congratulations! You guessed the right number!";
         lastGuess.style.backgroundColor = 'green';
         lessOrMore.textContent = '';
+        stopTimer ();
         setGameOver();
     } else if (guessCount === 3) {
         lastGuess.textContent = `Your attempts are over! Try again! The correct number is ${randomNumberEasy}`;
+        stopTimer ();
         setGameOver();
-    } else {
+    }  else {
         lastGuess.textContent = `Nope! Next attempt! You have ${3 - guessCount} guesses left!`;
         lastGuess.style.backgroundColor = 'red';
         if (playerGuess < randomNumberEasy) {
@@ -102,11 +107,11 @@ function checkNumberHard () {
         lastGuess.style.backgroundColor = 'green';
         lessOrMore.textContent = '';
         setGameOver();
-    } else if (guessCount === 15) {
+    } else if (guessCount === 10) {
         lastGuess.textContent = `Your attempts are over! Try again! The correct number is ${randomNumberHard}`;
         setGameOver();
     } else {
-        lastGuess.textContent = `Nope! Next attempt! You have ${15 - guessCount} guesses left!`;
+        lastGuess.textContent = `Nope! Next attempt! You have ${10 - guessCount} guesses left!`;
         lastGuess.style.backgroundColor = 'red';
         if (playerGuess < randomNumberHard) {
             lessOrMore.textContent = 'Your number was lower than guessed!';
@@ -137,11 +142,11 @@ function checkNumberHardest () {
         lastGuess.style.backgroundColor = 'green';
         lessOrMore.textContent = '';
         setGameOver();
-    } else if (guessCount === 15) {
+    } else if (guessCount === 10) {
         lastGuess.textContent = `Your attempts are over! Try again! The correct number is ${randomNumberVeryHard}`;
         setGameOver();
     } else {
-        lastGuess.textContent = `Nope! Next attempt! You have ${15 - guessCount} guesses left!`;
+        lastGuess.textContent = `Nope! Next attempt! You have ${10 - guessCount} guesses left!`;
         lastGuess.style.backgroundColor = 'red';
         if (playerGuess < randomNumberVeryHard) {
             lessOrMore.textContent = 'Your number was lower than guessed!';
@@ -158,17 +163,36 @@ function checkNumberHardest () {
 }
 veryHardCheck.addEventListener('click', checkNumberHardest);
 
+function timerDisplay() {
+    countdown = setInterval(function () {
+        count--;
+        timeLeft.innerHTML = `${count}s`;
+        if (count === 0) {
+            lastGuess.textContent = `Your time is over! Try again! The correct number is ${randomNumberEasy}`;
+            stopTimer ();
+            setGameOver();
+        }
+    }, 1000);
+}
+
+function stopTimer () {
+    clearInterval(countdown);
+}
 
 
 function setGameOver() {
     playerInput.disabled = true;
     playerCheck.disabled = true;
-    easyCheck.disabled = true;
-    mediumCheck.disabled = true;
+    disableCheckEasy = true;
+    stopTimer ();
   }
+
+function disableCheckEasy () {
+    document.getElementById('easy-check').disabled = true;
+}
 
   function refreshPage(){
     window.location.reload();
 } 
 
-newGameButton.addEventListener('click', refreshPage)
+newGameButton.addEventListener('click', refreshPage,  timerDisplay());

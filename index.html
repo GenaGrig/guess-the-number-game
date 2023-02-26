@@ -14,10 +14,10 @@
         <h4 class="game-font">Rules:</h4>
         <p>In this game you need to guess the random number, chosen by AI in different challenges.
             <ul>
-                <li>Easy:   1 to 10 in 3 attempts</li>
-                <li>Medium: 1 to 100 in 10 attempts</li>
-                <li>Hard:   1 to 500 in 15 attempts</li>
-                <li>Hardest:   1 to 1000 in 15 attempts</li>
+                <li><b>Easy:</b>    1 to 10 in 3 attempts</li>
+                <li><b>Medium:</b>  1 to 100 in 10 attempts</li>
+                <li><b>Hard:</b>    1 to 500 in 10 attempts</li>
+                <li><b>Hardest</b>  1 to 1000 in 10 attempts</li>
             </ul>
             After every guess you will get a hint, if you number was less or higher than guessed by AI.
         </p>
@@ -30,11 +30,12 @@
         <button id="very-hard-check" class="btn"><span class="button-text">Hardest</span></button>
         <p><h3>Start New Game:</h3></p>
         <button id="new-game" class="btn"><span class="button-text">New Game</span></button>
+        <p id="countdown">15s</p>
     </div>
     <div id="input-field">
         <br>
         <label for="player-guess"><span class="player-guess">Guess the number:</span></label>
-        <input type="number" min="1" max="1000" class="player-input" id="player-input" placeholder="Guess here" required>
+        <input type="number" class="player-input" id="player-input" placeholder="Guess here" required>
         <!-- <button data-type="submit" id="submit-button" class="submit-answer-btn">Check your answer</button> -->
     </div>
     <div class="hint-result-area">
