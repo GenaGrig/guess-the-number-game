@@ -10,7 +10,7 @@ body {
     overflow: hidden;
 }
 
-#game-section {
+#game-section, #gameArea {
     background-color: rgba(18, 179, 219, 0.6);
     width: 100%;
     margin: 100px 0;
@@ -52,7 +52,7 @@ p {
 }
 
 #game-diff-buttons,
-#submit-button,
+#submit-button-easy,
 #input-field {
     text-align: center;
     margin-bottom: 20px;

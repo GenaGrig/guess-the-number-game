@@ -8,16 +8,32 @@ let totalGuesses = document.getElementById('total-guesses');
 let lastGuess = document.getElementById('last-guess');
 let lessOrMore = document.getElementById('less-or-more');
 let playerInput = document.getElementById('player-input');
-let playerCheck = document.getElementById('submit-button');
+let playerCheckEasy = document.getElementById('submit-button-easy');
+let playerCheckMedium = document.getElementById('submit-button-medium');
 let easyCheck = document.getElementById('easy-check');
 let mediumCheck = document.getElementById('medium-check');
 let hardCheck = document.getElementById('hard-check');
 let veryHardCheck = document.getElementById('very-hard-check');
 
+
 let guessCount = 1;
 let newGameButton = document.getElementById('new-game');
 
+function welcome() {
+    document.getElementById('new-game').style.display = 'none';
+    document.getElementById('gameArea').style.display = 'none';
+}
+
+function startGameView() {
+    document.getElementById('game-section').style.display = 'none';
+    document.getElementById('gameArea').style.display = 'block';
+}
+
 function checkNumberEasy () {
+
+    startGameView();
+    disableSubmitButtonMedium();
+
     let playerGuess = Number(playerInput.value);
 
     if (guessCount === 1) {
@@ -51,9 +67,13 @@ function checkNumberEasy () {
     playerInput.focus();
     
 }
-easyCheck.addEventListener('click', checkNumberEasy);
+playerCheckEasy.addEventListener('click', checkNumberEasy);
 
 function checkNumberMedium () {
+
+    startGameView();
+    disableSubmitButtonEasy();
+
     let playerGuess = Number(playerInput.value);
 
     if (guessCount === 1) {
@@ -86,7 +106,7 @@ function checkNumberMedium () {
     playerInput.value = '';
     playerInput.focus();
 }
-mediumCheck.addEventListener('click', checkNumberMedium);
+playerCheckMedium.addEventListener('click', checkNumberMedium);
 
 function checkNumberHard () {
     let playerGuess = Number(playerInput.value);
@@ -160,16 +180,21 @@ veryHardCheck.addEventListener('click', checkNumberHardest);
 
 function setGameOver() {
     playerInput.disabled = true;
-    playerCheck.disabled = true;
-    disableCheckEasy = true;
+    playerCheckEasy.disabled = true;
+    playerCheckMedium.disabled = true;
+    document.getElementById('new-game').style.display = 'inline';
   }
-
-function disableCheckEasy () {
-    document.getElementById('easy-check').disabled = true;
-}
 
   function refreshPage(){
     window.location.reload();
 } 
+
+function disableSubmitButtonEasy() {
+    document.getElementById('submit-button-easy').style.display = 'none';
+}
+
+function disableSubmitButtonMedium() {
+    document.getElementById('submit-button-medium').style.display = 'none';
+}
 
 newGameButton.addEventListener('click', refreshPage);
