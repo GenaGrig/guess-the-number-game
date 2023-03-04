@@ -1,4 +1,8 @@
 // Define all variables that we need in our code
+// Insert function checkNumberEasy in another function Easy mode. Make button onclick on EasyMode function. 
+// Make same thing with medium check function. 
+//Create different buttons variables for player check and game difficulty.
+
 let randomNumberEasy = Math.floor(Math.random() * 10) + 1;
 let randomNumberMedium = Math.floor(Math.random() * 100) + 1;
 let randomNumberHard = Math.floor(Math.random() * 500) + 1;
