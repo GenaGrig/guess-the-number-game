@@ -36,7 +36,7 @@ function easyLevel () {
     checkNumberEasy();
 }
 function checkNumberEasy () {
-
+    
     startGameView();
     disableSubmitButtonMedium();
     disableSubmitButtonHard();
@@ -55,11 +55,11 @@ function checkNumberEasy () {
         lastGuess.style.backgroundColor = 'green';
         lessOrMore.textContent = '';
         setGameOver();
-    } else if (guessCount === 3) {
+    } else if (guessCount === 4) {
         lastGuess.textContent = `Your attempts are over! Try again! The correct number is ${randomNumberEasy}`;
         setGameOver();
     }  else {
-        lastGuess.textContent = `Nope! Next attempt! You have ${3 - guessCount} guesses left!`;
+        lastGuess.textContent = `Nope! Next attempt! You have ${4 - guessCount} guesses left!`;
         lastGuess.style.backgroundColor = 'red';
         if (playerGuess < randomNumberEasy) {
             lessOrMore.textContent = 'Your number was lower than guessed!';
@@ -101,11 +101,11 @@ function checkNumberMedium () {
         lastGuess.style.backgroundColor = 'green';
         lessOrMore.textContent = '';
         setGameOver();
-    } else if (guessCount === 10) {
+    } else if (guessCount === 11) {
         lastGuess.textContent = `Your attempts are over! Try again! The correct number is ${randomNumberMedium}`;
         setGameOver();
     } else {
-        lastGuess.textContent = `Nope! Next attempt! You have ${10 - guessCount} guesses left!`;
+        lastGuess.textContent = `Nope! Next attempt! You have ${11 - guessCount} guesses left!`;
         lastGuess.style.backgroundColor = 'red';
         if (playerGuess < randomNumberMedium) {
             lessOrMore.textContent = 'Your number was lower than guessed!';
@@ -146,11 +146,11 @@ function checkNumberHard () {
         lastGuess.style.backgroundColor = 'green';
         lessOrMore.textContent = '';
         setGameOver();
-    } else if (guessCount === 10) {
+    } else if (guessCount === 11) {
         lastGuess.textContent = `Your attempts are over! Try again! The correct number is ${randomNumberHard}`;
         setGameOver();
     } else {
-        lastGuess.textContent = `Nope! Next attempt! You have ${10 - guessCount} guesses left!`;
+        lastGuess.textContent = `Nope! Next attempt! You have ${11 - guessCount} guesses left!`;
         lastGuess.style.backgroundColor = 'red';
         if (playerGuess < randomNumberHard) {
             lessOrMore.textContent = 'Your number was lower than guessed!';
@@ -191,11 +191,11 @@ function checkNumberHardest () {
         lastGuess.style.backgroundColor = 'green';
         lessOrMore.textContent = '';
         setGameOver();
-    } else if (guessCount === 10) {
+    } else if (guessCount === 11) {
         lastGuess.textContent = `Your attempts are over! Try again! The correct number is ${randomNumberVeryHard}`;
         setGameOver();
     } else {
-        lastGuess.textContent = `Nope! Next attempt! You have ${10 - guessCount} guesses left!`;
+        lastGuess.textContent = `Nope! Next attempt! You have ${11 - guessCount} guesses left!`;
         lastGuess.style.backgroundColor = 'red';
         if (playerGuess < randomNumberVeryHard) {
             lessOrMore.textContent = 'Your number was lower than guessed!';
