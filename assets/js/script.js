@@ -73,7 +73,7 @@ function checkNumberEasy () {
     guessCount++;
     playerInput.value = '';
     playerInput.focus();
-    
+
 }
 playerCheckEasy.addEventListener('click', checkNumberEasy);
 
@@ -119,6 +119,7 @@ function checkNumberMedium () {
     guessCount++;
     playerInput.value = '';
     playerInput.focus();
+
 }
 playerCheckMedium.addEventListener('click', checkNumberMedium);
 
@@ -164,6 +165,7 @@ function checkNumberHard () {
     guessCount++;
     playerInput.value = '';
     playerInput.focus();
+
 }
 playerCheckHard.addEventListener('click', checkNumberHard);
 
@@ -209,6 +211,7 @@ function checkNumberHardest () {
     guessCount++;
     playerInput.value = '';
     playerInput.focus();
+
 }
 playerCheckHardest.addEventListener('click', checkNumberHardest);
 
