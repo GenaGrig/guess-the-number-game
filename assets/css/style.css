@@ -219,3 +219,34 @@ ul {
     }
 
 }
+
+@media screen and (max-width: 360px) {
+
+    body {
+        width: 80%;
+        margin: 0 15px;
+    }
+
+    .btn {
+        margin: 10px 5px;
+    }
+
+    #player-input {
+        margin-top: 20px;
+    }
+
+    #total-guesses,
+    #last-guess,
+    #less-or-more {
+        font-size: 16px;
+    }
+
+    p, ul {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+}
