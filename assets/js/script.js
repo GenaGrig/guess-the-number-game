@@ -32,11 +32,12 @@ function startGameView() {
     document.getElementById('gameArea').style.display = 'block';
 }
 
-function easyLevel () {
+function easyLevel() {
     checkNumberEasy();
 }
-function checkNumberEasy () {
-    
+
+function checkNumberEasy() {
+
     startGameView();
     disableSubmitButtonMedium();
     disableSubmitButtonHard();
@@ -58,7 +59,7 @@ function checkNumberEasy () {
     } else if (guessCount === 4) {
         lastGuess.textContent = `Your attempts are over! Try again! The correct number is ${randomNumberEasy}`;
         setGameOver();
-    }  else {
+    } else {
         lastGuess.textContent = `Nope! Next attempt! You have ${4 - guessCount} guesses left!`;
         lastGuess.style.backgroundColor = 'red';
         if (playerGuess < randomNumberEasy) {
@@ -81,7 +82,7 @@ function mediumLevel() {
     checkNumberMedium();
 }
 
-function checkNumberMedium () {
+function checkNumberMedium() {
 
     startGameView();
     disableSubmitButtonEasy();
@@ -127,7 +128,7 @@ function hardLevel() {
     checkNumberHard();
 }
 
-function checkNumberHard () {
+function checkNumberHard() {
 
     startGameView();
     disableSubmitButtonEasy();
@@ -169,11 +170,11 @@ function checkNumberHard () {
 }
 playerCheckHard.addEventListener('click', checkNumberHard);
 
-function hardestLevel () {
+function hardestLevel() {
     checkNumberHardest();
 }
 
-function checkNumberHardest () {
+function checkNumberHardest() {
 
     startGameView();
     disableSubmitButtonEasy();
@@ -222,11 +223,11 @@ function setGameOver() {
     playerCheckHard.disabled = true;
     playerCheckHardest.disabled = true;
     document.getElementById('new-game').style.display = 'inline';
-  }
+}
 
-  function refreshPage(){
+function refreshPage() {
     window.location.reload();
-} 
+}
 
 function disableSubmitButtonEasy() {
     document.getElementById('submit-button-easy').style.display = 'none';

@@ -10,7 +10,8 @@ body {
     overflow: auto;
 }
 
-#game-section, #gameArea {
+#game-section,
+#gameArea {
     background-color: rgba(18, 179, 219, 0.6);
     width: 100%;
     margin: 100px 0;
@@ -35,7 +36,8 @@ h3 {
     text-align: center;
 }
 
-p, ul {
+p,
+ul {
     font-weight: 400;
     font-size: 20px;
 }
@@ -75,7 +77,8 @@ p, ul {
     font-size: 18px;
 }
 
-#easy, #easy-check {
+#easy,
+#easy-check {
     background-color: lightgreen;
 }
 
@@ -84,7 +87,8 @@ p, ul {
     transition: 0.5s;
 }
 
-#medium, #medium-check {
+#medium,
+#medium-check {
     background-color: yellow;
 }
 
@@ -93,7 +97,8 @@ p, ul {
     transition: 0.5s;
 }
 
-#hard, #hard-check {
+#hard,
+#hard-check {
     background-color: red;
 }
 
@@ -153,27 +158,27 @@ p, ul {
 
 @media screen and (max-width: 1160px) {
 
-.btn {
-margin: 20px 50px;
-}
+    .btn {
+        margin: 20px 50px;
+    }
 
 }
 
 @media screen and (max-width: 820px) {
 
-.btn {
-    margin-bottom: 20px;
-}
+    .btn {
+        margin-bottom: 20px;
+    }
 
-body {
-    width: 80%;
-    margin: 0 auto;
-}
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
 
-#total-guesses {
-    font-size: 19px;
-}
-    
+    #total-guesses {
+        font-size: 19px;
+    }
+
 }
 
 @media screen and (max-width: 590px) {
@@ -194,23 +199,23 @@ body {
 
 @media screen and (max-width: 440px) {
 
-body {
-    width: 80%;
-    margin: 0 20px;
-}    
+    body {
+        width: 80%;
+        margin: 0 20px;
+    }
 
-.btn {
-    margin: 10px 10px;
-}
+    .btn {
+        margin: 10px 10px;
+    }
 
-#player-input {
-    margin-top: 20px;
-}
+    #player-input {
+        margin-top: 20px;
+    }
 
-#total-guesses,
-#last-guess,
-#less-or-more {
-    font-size: 18px;
-}
+    #total-guesses,
+    #last-guess,
+    #less-or-more {
+        font-size: 18px;
+    }
 
 }
