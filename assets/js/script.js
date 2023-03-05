@@ -1,7 +1,4 @@
 // Define all variables that we need in our code
-// Insert function checkNumberEasy in another function Easy mode. Make button onclick on EasyMode function. 
-// Make same thing with medium check function. 
-//Create different buttons variables for player check and game difficulty.
 
 let randomNumberEasy = Math.floor(Math.random() * 10) + 1;
 let randomNumberMedium = Math.floor(Math.random() * 100) + 1;
@@ -14,6 +11,8 @@ let lessOrMore = document.getElementById('less-or-more');
 let playerInput = document.getElementById('player-input');
 let playerCheckEasy = document.getElementById('submit-button-easy');
 let playerCheckMedium = document.getElementById('submit-button-medium');
+let playerCheckHard = document.getElementById('submit-button-hard');
+let playerCheckHardest = document.getElementById('submit-button-hardest');
 let easyCheck = document.getElementById('easy-check');
 let mediumCheck = document.getElementById('medium-check');
 let hardCheck = document.getElementById('hard-check');
@@ -33,10 +32,15 @@ function startGameView() {
     document.getElementById('gameArea').style.display = 'block';
 }
 
+function easyLevel () {
+    checkNumberEasy();
+}
 function checkNumberEasy () {
 
     startGameView();
     disableSubmitButtonMedium();
+    disableSubmitButtonHard();
+    disableSubmitButtonHardest();
 
     let playerGuess = Number(playerInput.value);
 
@@ -73,10 +77,16 @@ function checkNumberEasy () {
 }
 playerCheckEasy.addEventListener('click', checkNumberEasy);
 
+function mediumLevel() {
+    checkNumberMedium();
+}
+
 function checkNumberMedium () {
 
     startGameView();
     disableSubmitButtonEasy();
+    disableSubmitButtonHard();
+    disableSubmitButtonHardest();
 
     let playerGuess = Number(playerInput.value);
 
@@ -112,7 +122,17 @@ function checkNumberMedium () {
 }
 playerCheckMedium.addEventListener('click', checkNumberMedium);
 
+function hardLevel() {
+    checkNumberHard();
+}
+
 function checkNumberHard () {
+
+    startGameView();
+    disableSubmitButtonEasy();
+    disableSubmitButtonMedium();
+    disableSubmitButtonHardest();
+
     let playerGuess = Number(playerInput.value);
 
     if (guessCount === 1) {
@@ -145,9 +165,19 @@ function checkNumberHard () {
     playerInput.value = '';
     playerInput.focus();
 }
-hardCheck.addEventListener('click', checkNumberHard);
+playerCheckHard.addEventListener('click', checkNumberHard);
+
+function hardestLevel () {
+    checkNumberHardest();
+}
 
 function checkNumberHardest () {
+
+    startGameView();
+    disableSubmitButtonEasy();
+    disableSubmitButtonMedium();
+    disableSubmitButtonHard();
+
     let playerGuess = Number(playerInput.value);
 
     if (guessCount === 1) {
@@ -180,12 +210,14 @@ function checkNumberHardest () {
     playerInput.value = '';
     playerInput.focus();
 }
-veryHardCheck.addEventListener('click', checkNumberHardest);
+playerCheckHardest.addEventListener('click', checkNumberHardest);
 
 function setGameOver() {
     playerInput.disabled = true;
     playerCheckEasy.disabled = true;
     playerCheckMedium.disabled = true;
+    playerCheckHard.disabled = true;
+    playerCheckHardest.disabled = true;
     document.getElementById('new-game').style.display = 'inline';
   }
 
@@ -199,6 +231,14 @@ function disableSubmitButtonEasy() {
 
 function disableSubmitButtonMedium() {
     document.getElementById('submit-button-medium').style.display = 'none';
+}
+
+function disableSubmitButtonHard() {
+    document.getElementById('submit-button-hard').style.display = 'none';
+}
+
+function disableSubmitButtonHardest() {
+    document.getElementById('submit-button-hardest').style.display = 'none';
 }
 
 newGameButton.addEventListener('click', refreshPage);

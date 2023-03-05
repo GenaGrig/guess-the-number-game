@@ -12,22 +12,21 @@
     <div class="welcomeScreen">
         <h1 class="game-font">Guess the number!</h1>
         <h4 class="game-font">Rules:</h4>
-        <p>In this game you need to guess the random number, chosen by AI in different challenges.
+        <p>In this game you need to guess the random number, chosen by AI in different challenges.</p> 
             <ul>
                 <li><b>Easy:</b>    1 to 10 in 3 attempts</li>
                 <li><b>Medium:</b>  1 to 100 in 10 attempts</li>
                 <li><b>Hard:</b>    1 to 500 in 10 attempts</li>
                 <li><b>Hardest</b>  1 to 1000 in 10 attempts</li>
             </ul>
-            After every guess you will get a hint, if you number was less or higher than guessed by AI.
-        </p>
+            <p>After every guess you will get a hint, if you number was less or higher than guessed by AI.</p>
         <h3 class="game-font-diff">Choose difficulty</h3>
     </div>
     <div id="game-diff-buttons">
-        <button id="easy-check" onclick="checkNumberEasy()" class="btn"><span class="button-text">Easy</span></button>
-        <button id="medium-check" onclick="checkNumberMedium()"  class="btn"><span class="button-text">Medium</span></button>
-        <button id="hard-check" class="btn"><span class="button-text">Hard</span></button>
-        <button id="very-hard-check" class="btn"><span class="button-text">Hardest</span></button>
+        <button id="easy-check" onclick="easyLevel()" class="btn"><span class="button-text">Easy</span></button>
+        <button id="medium-check" onclick="mediumLevel()"  class="btn"><span class="button-text">Medium</span></button>
+        <button id="hard-check" onclick="hardLevel()" class="btn"><span class="button-text">Hard</span></button>
+        <button id="very-hard-check" onclick="hardestLevel()" class="btn"><span class="button-text">Hardest</span></button>
         <p>
         <button id="new-game" class="btn"><span class="button-text">New Game</span></button>
         </p>
@@ -39,6 +38,8 @@
         <input type="number" class="player-input" id="player-input" placeholder="Guess here" required>
         <button data-type="submit" id="submit-button-easy" class="submit-answer-btn">Check your answer</button>
         <button data-type="submit" id="submit-button-medium" class="submit-answer-btn">Check your answer</button>
+        <button data-type="submit" id="submit-button-hard" class="submit-answer-btn">Check your answer</button>
+        <button data-type="submit" id="submit-button-hardest" class="submit-answer-btn">Check your answer</button>
     </div>
     <div class="hint-result-area">
         <p id="total-guesses"></p>
