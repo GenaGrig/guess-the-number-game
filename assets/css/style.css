@@ -197,7 +197,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 460px) {
 
     body {
         width: 80%;
@@ -216,6 +216,10 @@ ul {
     #last-guess,
     #less-or-more {
         font-size: 18px;
+    }
+
+    h1 {
+        font-size: 30px;
     }
 
 }
