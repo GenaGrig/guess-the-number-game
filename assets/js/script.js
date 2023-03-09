@@ -18,7 +18,23 @@ function welcome() {
 function startGameView() {
     document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('gameArea').style.display = 'block';
-    difficultyLevel.textContent = `Your difficulty level is ${selectedLevel}`;
+    chooseColor();
+}
+
+function chooseColor() {
+    if (selectedLevel === 'Easy') {
+        difficultyLevel.textContent = `Your difficulty level is ${selectedLevel}, numbers 1 to 10.`
+        difficultyLevel.style.backgroundColor = "green";
+    } else if (selectedLevel === "Medium") {
+        difficultyLevel.textContent = `Your difficulty level is ${selectedLevel}, numbers 1 to 100.`
+        difficultyLevel.style.backgroundColor = "darkorange";
+    } else if (selectedLevel === 'Hard') {
+        difficultyLevel.textContent = `Your difficulty level is ${selectedLevel}, numbers 1 to 500.`
+        difficultyLevel.style.backgroundColor = "red";
+    } else if (selectedLevel === 'Hardest') {
+        difficultyLevel.textContent = `Your difficulty level is ${selectedLevel}, numbers 1 to 1000.`
+        difficultyLevel.style.backgroundColor = "darkred";
+    }
 }
 
 let selectedLevel;
@@ -37,7 +53,7 @@ const levelAttemptsMap = {
     Medium:10,
     Hard:9,
     Hardest:8
-}
+};
 
 function getRandomNumber () {
     if (selectedLevel) {
@@ -49,12 +65,7 @@ function startGame (level) {
 selectedLevel = level;
 getRandomNumber();
 startGameView();
-testLevel();
-}
-
-function testLevel() {
-    console.log(selectedLevel, 'level');
-    console.log(randomNumber, 'randomNumber');
+playerInput.focus();
 }
 
 function compareValues() {
@@ -66,7 +77,6 @@ function compareValues() {
         playerInput.focus();
         return
     }
-    console.log(playerGuess, 'guess')
 
     if (guessCount === 1) {
         totalGuesses.textContent = "Your previous guesses are: ";
@@ -74,7 +84,6 @@ function compareValues() {
     }
     totalGuesses.textContent += playerGuess + ' ';
 
-    console.log(playerGuess===randomNumber, 'is equal')
     if (playerGuess === randomNumber) {
         lastGuess.textContent = "Congratulations! You guessed the right number!";
         lastGuess.style.backgroundColor = 'green';
@@ -104,48 +113,6 @@ function compareValues() {
 
 submitButton.addEventListener('click', compareValues);
 
-
-function compareValuessss() {
-
-    let playerGuess = Number(playerInput.value);
-    if (playerGuess === '') {
-        alert('Please enter a valid number!');
-        return
-    }    
-
-    if (guessCount === 1) {
-        totalGuesses.textContent = "Your previous guesses are: ";
-        totalGuesses.style.backgroundColor = 'violet';
-    }
-    totalGuesses.textContent += playerGuess + ' ';
-
-    if (playerGuess === randomNumber) {
-        lastGuess.textContent = "Congratulations! You guessed the right number!";
-        lastGuess.style.backgroundColor = 'green';
-        lessOrMore.textContent = '';
-        setGameOver();
-    } else if (guessCount === levelAttemptsMap[selectedLevel]) {
-        lastGuess.textContent = `Your attempts are over! Try again! The correct number is ${randomNumber}`;
-        lessOrMore.textContent = '';
-        setGameOver();
-    } else {
-        lastGuess.textContent = `Nope! Next attempt! You have ${levelAttemptsMap[selectedLevel] - guessCount} guesses left!`;
-        lastGuess.style.backgroundColor = 'red';
-        if (playerGuess < randomNumber) {
-            lessOrMore.textContent = 'Your guess number is too low!';
-            lessOrMore.style.backgroundColor = 'blue';
-        } else if (playerGuess > randomNumber) {
-            lessOrMore.textContent = 'Your guess number is too high!';
-            lessOrMore.style.backgroundColor = 'red';
-        }
-    }
-
-    guessCount++;
-    playerInput.value = '';
-    playerInput.focus();
-
-}
-
 function setGameOver() {
     playerInput.disabled = true;
     submitButton.disabled = true;
@@ -155,3 +122,9 @@ function setGameOver() {
 function refreshPage() {
     window.location.reload();
 }
+
+document.getElementById('player-input').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        compareValues();
+    }
+})
