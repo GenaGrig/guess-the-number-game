@@ -84,6 +84,20 @@ ul {
     font-size: 18px;
 }
 
+#myBtn {
+    background-color: lightblue;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: 40%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#myBtn:hover {
+    background-color: darkcyan;
+    transition: 0.5s;
+}
+
 #easy,
 #easy-check {
     background-color: lightgreen;
@@ -261,3 +275,59 @@ ul {
     }
 
 }
+/* The Modal code is taken from https://www.w3schools.com/howto/howto_css_modals.asp */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    overflow: hidden; /* Enable scroll if needed */
+    width: 50%;
+    text-align: justify;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #00e6f7;
+    color: #000;
+    margin-left: 0vh;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10%;
+    width: 80%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  /* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #3f3e3e;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-style {
+    text-align: center;
+  }

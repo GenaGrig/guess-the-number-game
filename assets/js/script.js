@@ -7,6 +7,27 @@ let playerInput = document.getElementById('player-input');
 let submitButton = document.getElementById('submit-button');
 let difficultyLevel = document.getElementById('difficultyLevel')
 
+//modal
+
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("myBtn");
+
+function openModal() {
+    modal.style.display = "block";
+  }
+
+function closeModal() {
+    modal.style.display = "none";
+  }
+
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+  }
+
+
+//Game variables  
 let guessCount = 1;
 let newGameButton = document.getElementById('new-game');
 
@@ -133,3 +154,4 @@ document.getElementById('player-input').addEventListener('keydown', function(eve
         compareValues();
     }
 })
+
