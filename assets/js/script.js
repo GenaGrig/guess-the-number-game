@@ -21,6 +21,8 @@ function startGameView() {
     chooseColor();
 }
 
+// Choosing background color based on a selected difficulty at game screen.
+
 function chooseColor() {
     if (selectedLevel === 'Easy') {
         difficultyLevel.textContent = `Your difficulty level is ${selectedLevel}, numbers 1 to 10.`
@@ -41,6 +43,7 @@ let selectedLevel;
 let randomNumber;
 let playerGuess;
 
+// Choice of difficulty, random number.
 const levelMap = {
     Easy:10,
     Medium:100,
@@ -48,6 +51,7 @@ const levelMap = {
     Hardest:1000    
 };
 
+// Choice of attempts based on difficulty.
 const levelAttemptsMap = {
     Easy:3,
     Medium:10,
@@ -68,6 +72,7 @@ startGameView();
 playerInput.focus();
 }
 
+//Main game function 
 function compareValues() {
 
     let playerGuess = Number(playerInput.value);
