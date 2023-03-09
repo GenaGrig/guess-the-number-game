@@ -10,7 +10,7 @@
 </head>
 
 <body onload="welcome()">
-    <section id="game-section">
+    <section id="welcome-section">
         <div class="welcomeScreen">
             <h1 class="game-font">Guess the number!</h1>
             <h4 class="rules-header">Rules:</h4>
@@ -25,24 +25,22 @@
             <h3 class="game-font-diff">Choose difficulty</h3>
         </div>
         <div id="game-diff-buttons">
-            <button id="easy-check" onclick="easyLevel()" class="btn"><span class="button-text">Easy</span></button>
-            <button id="medium-check" onclick="mediumLevel()" class="btn"><span
+            <button id="easy-check" onclick="startGame('Easy')" class="btn"><span class="button-text">Easy</span></button>
+            <button id="medium-check" onclick="startGame('Medium')" class="btn"><span
                     class="button-text">Medium</span></button>
-            <button id="hard-check" onclick="hardLevel()" class="btn"><span class="button-text">Hard</span></button>
-            <button id="very-hard-check" onclick="hardestLevel()" class="btn"><span
+            <button id="hard-check" onclick="startGame('Hard')" class="btn"><span class="button-text">Hard</span></button>
+            <button id="very-hard-check" onclick="startGame('Hardest')" class="btn"><span
                     class="button-text">Hardest</span></button>
         </div>
     </section>
     <section id="gameArea">
         <h1 class="game-font">Guess the number!</h1>
+        <p id="difficultyLevel"></p>
         <div id="input-field">
             <label for="player-guess"><span class="player-guess">Enter your guess:</span></label>
             <input type="number" class="player-input" id="player-input" placeholder="Guess here" required>
-            <button data-type="submit" id="submit-button-easy" class="submit-answer-btn">Check your answer</button>
-            <button data-type="submit" id="submit-button-medium" class="submit-answer-btn">Check your answer</button>
-            <button data-type="submit" id="submit-button-hard" class="submit-answer-btn">Check your answer</button>
-            <button data-type="submit" id="submit-button-hardest" class="submit-answer-btn">Check your answer</button>
-            <p><button id="new-game" class="btn"><span class="button-text">New Game</span></button></p>
+            <button data-type="submit" id="submit-button" class="submit-answer-btn">Check your answer</button>
+            <p><button id="new-game" onclick="refreshPage()" class="btn"><span class="button-text">New Game</span></button></p>
         </div>
         <div class="hint-result-area">
             <p id="total-guesses"></p>

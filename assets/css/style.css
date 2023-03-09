@@ -36,6 +36,13 @@ h3 {
     text-align: center;
 }
 
+#difficultyLevel {
+    font-size: 20px;
+    background-color: rgb(0, 124, 124);
+    text-align: center;
+    padding: 5px 5px;
+}
+
 p,
 ul {
     font-weight: 400;
