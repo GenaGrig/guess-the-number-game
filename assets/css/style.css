@@ -75,6 +75,10 @@ ul {
     width: 130px;
 }
 
+.how-to-play-button {
+    text-align: center;
+}
+
 .submit-answer-btn {
     margin-top: 20px;
 }
@@ -87,10 +91,9 @@ ul {
 #myBtn {
     background-color: lightblue;
     font-size: 20px;
-    padding: 10px 20px;
-    margin-left: 40%;
     text-align: center;
     border-radius: 25px;
+    width: 175px;
 }
 
 #myBtn:hover {
@@ -281,9 +284,14 @@ ul {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    overflow: hidden; /* Enable scroll if needed */
-    width: 50%;
-    text-align: justify;
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
   /* Modal Content */
@@ -291,11 +299,11 @@ ul {
     position: relative;
     background-color: #00e6f7;
     color: #000;
-    margin-left: 0vh;
+    margin: 20vh auto;
     padding: 20px;
     border: 1px solid #000000;
     border-radius: 10%;
-    width: 80%;
+    width: 50%;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;

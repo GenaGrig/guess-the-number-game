@@ -21,11 +21,10 @@ function closeModal() {
   }
 
 window.onclick = function(event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
+    if (event.target == modal) {
+      modal.style.display = "none";
     }
   }
-
 
 //Game variables  
 let guessCount = 1;
@@ -93,6 +92,7 @@ startGameView();
 playerInput.focus();
 }
 
+
 //Main game function 
 function compareValues() {
 
@@ -154,4 +154,3 @@ document.getElementById('player-input').addEventListener('keydown', function(eve
         compareValues();
     }
 })
-
