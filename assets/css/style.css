@@ -10,6 +10,23 @@ body {
     overflow: auto;
 }
 
+#error404 {
+    margin: 100px 0 50px 150px;
+}
+
+.error404 {
+    text-decoration: underline;
+    color: rgb(32, 0, 212);
+    font-size: 24px;
+    margin-left: 50%;
+    width: 100%;
+}
+
+.error404:hover {
+    color: #000000;
+    transition: 0.5s;
+}
+
 #welcome-section,
 #gameArea {
     background-color: rgba(18, 179, 219, 0.6);
