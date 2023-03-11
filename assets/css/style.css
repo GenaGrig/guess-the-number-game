@@ -64,6 +64,7 @@ p,
 ul {
     font-weight: 400;
     font-size: 20px;
+    list-style-type: none;
 }
 
 .rules-center {
