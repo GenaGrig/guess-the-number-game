@@ -212,6 +212,10 @@ ul {
         margin-bottom: 20px;
     }
 
+    #welcome-section {
+        margin: 75px -20px;
+    }
+
     body {
         width: 80%;
         margin: 0 auto;
@@ -230,6 +234,10 @@ ul {
         margin: 0 40px;
     }
 
+    #welcome-section {
+        margin: 50px 0;
+    }
+
     .btn {
         margin: 20px 20px;
     }
@@ -244,6 +252,10 @@ ul {
     body {
         width: 80%;
         margin: 0 20px;
+    }
+
+    #welcome-section {
+        margin: 10px 0;
     }
 
     .btn {
@@ -271,6 +283,10 @@ ul {
     body {
         width: 80%;
         margin: 0 15px;
+    }
+
+    #welcome-section {
+        margin: 10px 0;
     }
 
     .btn {
