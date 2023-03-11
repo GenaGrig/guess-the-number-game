@@ -17,20 +17,19 @@
             <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">X</span>
-                <p><span class="modal-style"><b>How to play:</b></span>
+                <span class="modal-style"><b>How to play:</b></span>
                     <br>
                     <br>
-                    In this game you need to guess the random number, chosen by AI in different levels of difficulty. 
+                    <p>In this game you need to guess the random number, chosen by AI in different levels of difficulty. 
                     After every guess you will get a hint, if your number was less or higher than chosen by AI and how many attempts are left.
-                    Good luck!
-                    <ul><b>Difficulty levels:</b>
-                        <p></p>
+                    Good luck!</p>
+                    <ul>
+                        <li><b>Difficulty levels:</b></li>
                         <li><b>Easy:</b> 1 to 10 in 3 attempts</li>
                         <li><b>Medium:</b> 1 to 100 in 10 attempts</li>
                         <li><b>Hard:</b> 1 to 500 in 9 attempts</li>
                         <li><b>Hardest:</b> 1 to 1000 in 8 attempts</li>
                     </ul>                 
-                </p>
               </div>
             </div>
             <h4 class="rules-header">Rules:</h4>
@@ -57,7 +56,7 @@
         <h1 class="game-font">Guess the number!</h1>
         <p id="difficultyLevel"></p>
         <div id="input-field">
-            <label for="player-guess"><span class="player-guess">Enter your guess:</span></label>
+            <label for="player-input"><span class="player-guess">Enter your guess:</span></label>
             <input type="number" class="player-input" id="player-input" placeholder="Guess here" required>
             <button data-type="submit" id="submit-button" class="submit-answer-btn">Check your answer</button>
             <p><button id="new-game" onclick="refreshPage()" class="btn"><span class="button-text">New Game</span></button></p>

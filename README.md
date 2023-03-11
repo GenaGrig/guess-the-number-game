@@ -156,3 +156,58 @@ Guess the number game is a simple number guessing game written in JavaScript wit
 * New Game button appears below input field for starting new game. Pushing new game button will make game area hidden and welcome screen appears. 
 
 ![Game end screen mobile](/assets/images/mobileGameEnd.jpg)
+
+# Usability testing
+
+* To get feedback I posted link to my friends and relatives.
+    - Several bugs were found and easy corrected by changing the code
+    - Responisive design works fine both on different mobile phones and tablets
+
+# Bugs
+
+No bugs were detected
+
+# CSS validator result - PASS
+
+<p></p>
+    <a href="http://jigsaw.w3.org/css-validator/validator?lang=ru&profile=css3svg&uri=https%3A%2F%2Fgenagrig.github.io%2Fguess-the-number-game%2F&usermedium=all&vextwarning=&warning=1">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Правильный CSS!" />
+    </a>
+</p>
+
+# HTML validator result - PASS
+
+
+
+# Deployment
+
+This website is published using GitHub Pages. The procedure of deployment is written below:
+
+1. Log in to the GitHub website.
+2. Choose the appropriate repository of that project that needs to be published. [My repository for this project.](https://github.com/GenaGrig/guess-the-number-game.git)
+3. Click on a Settings button in navigation bar above project files.
+4. On the left side you will see a list of sorted menus. Find the Pages button in Code and Automation. Push it.
+5. On the right side in Build and deployment you need:
+    * In Source dropdown menu choose Deploy from a branch
+    * In Branch dropdown menu choose "main" then "/(root) and click Save.
+6. Page will reload but nothing more happens. Link will not appear at once, wait a while.
+7. In a couple of minutes above Build and deployment you will see a statement that "Your site is live at" and a link to your website.
+    * The site was deployed to GitHub pages, live link is here: [Guess the number game on GitHub pages.](https://genagrig.github.io/guess-the-number-game/)
+
+## Creating a fork
+
+1. Navigate to the [repository](https://github.com/GenaGrig/guess-the-number-game.git)
+2. In the top-right corner of the page click on the fork button and select create a fork.
+3. You can change the name of the fork and add description.
+4. Choose to copy only the main branch or all branches to the new fork.
+5. Click Create a Fork. A repository should appear in your GitHub.
+
+## Cloning a repository
+
+1. Navigate to the [repository](https://github.com/GenaGrig/guess-the-number-game.git)
+2. Click on the Code button on top of the repository and copy the link.
+3. Open Git Bash and change the working directory to the location where you want the cloned directory.
+4. Type git clone and then paste the link.
+5. Press Enter to create your local clone.

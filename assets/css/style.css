@@ -355,6 +355,11 @@ ul {
     animation-duration: 0.4s
   }
 
+  .modal-style {
+    font-size: 24px;
+    margin: 20px 0 0 40px;
+  }
+
   /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
