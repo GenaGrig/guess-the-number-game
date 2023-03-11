@@ -101,3 +101,58 @@ Guess the number game is a simple number guessing game written in JavaScript wit
     - Countdown timer to guess the number before time runs upp. Still arguable, because time limit is unknown for each level of difficulty.
     - Timer that will start with first guess and goes upp. The goal is to guess the number as fast as possible.
 * Leaderboard is neccessary only if timer function will be implemented. There will be stored players with fastest number guesses.
+
+# Testing
+
+## Functionality testing on desktop
+
+### Welcome screen 
+
+* "How to play?" button
+    - Pushing the button opens the modal window with game rules.
+    - Pushing big X on the right top corner of modal window or somewhere outside it closes the modal window.
+    - Difficulty buttons. Each button works and selects the desired difficulty level. Pushing on each of the difficulty buttons welcome screen gets hidden and game area appears. 
+
+### Game screen
+
+* Input field allow only number values. When is empty and player tries to submit answer shows up error message below "Please enter a valid number!". This prevents game to continue until player will enter a valid number value.
+* "Check your answer button" works and checks player guesses each time player types in value and clicks the button. 
+* Previous guesses, number of attempts left and guessed number range (higher or lower) shows correct values and appears correctly.
+
+### End game screen
+
+* Player input field and "Check your answer" button gets disabled when number is guesed or player is out of attempts.
+* New Game button appears below input field for starting new game. Pushing new game button will make game area hidden and welcome screen appears. 
+
+## Functionality testing on mobile phones (Tested on Nokia 7 Plus)
+
+### Welcome screen 
+
+* "How to play?" button
+    - Pushing the button opens the modal window with game rules.
+    - Pushing big X on the right top corner of modal window or somewhere outside it closes the modal window.
+
+![Game screen by default](/assets/images/mobileWelcome.jpg)
+
+- Difficulty buttons. Each button works and selects the desired difficulty level. Pushing on each of the difficulty buttons welcome screen gets hidden and game area appears. To access them player needs to scroll down the page.
+
+![Game screen difficulty buttons](/assets/images/mobileWelcome1.jpg)
+
+### Game screen
+
+* Input field allow only number values. When is empty and player tries to submit answer shows up error message below "Please enter a valid number!". This prevents game to continue until player will enter a valid number value.
+* "Check your answer button" works and checks player guesses each time player types in value and clicks the button. It is located under the player input field.
+* Because the focus function is used, cursor appears directly in the input field and phone keyboard automaticaly opens with numbers page (as the input field is set as number only).
+
+![Game screen mobile before 1 attempt](/assets/images/mobileGame1.jpg)
+
+* Previous guesses, number of attempts left and guessed number range (higher or lower) shows correct values and appears correctly.
+
+![Game screen mobile after 1 attempt](/assets/images/mobileGame2.jpg)
+
+### End game screen
+
+* Player input field and "Check your answer" button gets disabled when number is guesed or player is out of attempts.
+* New Game button appears below input field for starting new game. Pushing new game button will make game area hidden and welcome screen appears. 
+
+![Game end screen mobile](/assets/images/mobileGameEnd.jpg)
