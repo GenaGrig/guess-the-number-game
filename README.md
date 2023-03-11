@@ -179,7 +179,19 @@ No bugs were detected
 
 # HTML validator result - PASS
 
+### [Result page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgenagrig.github.io%2Fguess-the-number-game%2F)
 
+# JavaScript validator [JShint](https://jshint.com/) result - PASS
+
+* No errors were found after validation.
+
+    - There are 12 functions in this file.
+
+    - Function with the largest signature take 1 arguments, while the median is 0.
+
+    - Largest function has 28 statements in it, while the median is 2.
+
+    - The most complex function has a cyclomatic complexity value of 7 while the median is 1.
 
 # Deployment
 
@@ -211,3 +223,9 @@ This website is published using GitHub Pages. The procedure of deployment is wri
 3. Open Git Bash and change the working directory to the location where you want the cloned directory.
 4. Type git clone and then paste the link.
 5. Press Enter to create your local clone.
+
+Continue with Credits
+Media - find the background source
+Acknowledgements
+Technologies and languages
+User stories and experience
