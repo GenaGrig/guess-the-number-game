@@ -17,7 +17,7 @@ Guess the number game is a simple number guessing game written in JavaScript wit
 * As a first time visitor, I want easily understand the main purpose of the website.
 * As a first time visitor, I want to be able to find the rules of the game quickly after landing on the page.
 * As a first time visitor, I want to be able to select different difficulty levels for the game and understand what the difference between them is.
-* As a first time user, I want to be able to easily navigate through the website.
+* As a first time visitor, I want to be able to easily navigate through the website.
 * As a first time visitor, I want to enjoy design and staying on a website, because I want to spend some amount of time playing the game without distraction.
 * As a first time visitor, I want to get feedback on my actions in game.
 
@@ -63,8 +63,8 @@ Guess the number game is a simple number guessing game written in JavaScript wit
 
    ![Difficulty level buttons](/assets/images/difficultyLevels.PNG)
 
-    In this section player chooses desired difficulty level. When the button is pushed, this welcome screen area becomes hidden and game area enables.  
-#
+In this section player chooses desired difficulty level. When the button is pushed, this welcome screen area becomes hidden and game area enables.  
+
 #### 2. Game screen.
 
 * Default game screen after player chooses difficulty level.
@@ -113,7 +113,7 @@ Guess the number game is a simple number guessing game written in JavaScript wit
 * Timer function
     - Countdown timer to guess the number before time runs up. Still arguable, because time limit is unknown for each level of difficulty.
     - Timer that will start with first guess and goes up. The goal is to guess the number as fast as possible.
-* Leaderboard is necessary only if timer function will be implemented. There will be stored players with fastest number guesses.
+* Leaderboard is necessary only if timer function will be implemented. There will be saved players times with fastest number guesses.
 
 # Technologies used
 
