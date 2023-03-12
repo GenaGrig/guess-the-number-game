@@ -8,6 +8,19 @@ Guess the number game is a simple number guessing game written in JavaScript wit
 
 ![Responsive design check](/assets/images/responsiveCheck.PNG)
 
+# User Experience
+
+## User stories
+
+### First time visitor goals
+
+* As a first time visitor, I want easily understand the main purpose of the website.
+* As a first time visitor, I want to be able to find the rules of the game quickly after landing on the page.
+* As a first time visitor, I want to be able to select different difficulty levels for the game and understand what is the difference between them.
+* As a first time user, I want to be able to easily navigate through the website.
+* As a first time visitor, I want to enjoy design and staying on a website, because I want to spend some amount of time playing the game without distraction.
+* As a first time visitor, I want to get feedback on my actions in game.
+
 # Design
 
 ## Wireframes
@@ -102,6 +115,22 @@ Guess the number game is a simple number guessing game written in JavaScript wit
     - Timer that will start with first guess and goes upp. The goal is to guess the number as fast as possible.
 * Leaderboard is neccessary only if timer function will be implemented. There will be stored players with fastest number guesses.
 
+# Technologies used
+
+## Languages
+
+* **HTML** for main design and layout
+* **CSS** for styling and responsiveness
+* **JavaScript** for game coding and implementation
+
+## Other programs and websites
+
+* [Balsamiq](https://balsamiq.com/wireframes/desktop/) for creating wireframes
+* [GitHub](github.com) for storing project repository
+* [GitHub Pages](https://pages.github.com/) for hosting a game online
+* [Visual Studio Code](https://code.visualstudio.com/) for coding all the project inside and pushing it to GitHub
+
+
 # Testing
 
 ## Functionality testing on desktop
@@ -167,7 +196,7 @@ Guess the number game is a simple number guessing game written in JavaScript wit
 
 No bugs were detected
 
-# CSS validator result - PASS
+## CSS validator result - PASS
 
 <p></p>
     <a href="http://jigsaw.w3.org/css-validator/validator?lang=ru&profile=css3svg&uri=https%3A%2F%2Fgenagrig.github.io%2Fguess-the-number-game%2F&usermedium=all&vextwarning=&warning=1">
@@ -177,11 +206,11 @@ No bugs were detected
     </a>
 </p>
 
-# HTML validator result - PASS
+## HTML validator result - PASS
 
 ### [Result page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgenagrig.github.io%2Fguess-the-number-game%2F)
 
-# JavaScript validator [JShint](https://jshint.com/) result - PASS
+## JavaScript validator [JShint](https://jshint.com/) result - PASS
 
 * No errors were found after validation.
 
@@ -192,6 +221,27 @@ No bugs were detected
     - Largest function has 28 statements in it, while the median is 2.
 
     - The most complex function has a cyclomatic complexity value of 7 while the median is 1.
+
+## Testing user stories 
+
+* As a first time visitor, I want easily understand the main purpose of the website.
+    - The big heading "Guess the number!" and button below it "How to play?" indicates clearly that this website is created for game with its own rules. Background in form of different numbers make association with numbers game stronger. 
+* As a first time visitor, I want to be able to find the rules of the game quickly after opening the page.
+    - There are duplicates of game rules on a website. Firstly, player can push the "How to play?" button below the heading to open a modal window with game rules. Secondary, there is duplicated game rules below the button in the middle of a page that can be as a reminder and a hint before choosing game difficulty.
+* As a first time visitor, I want to be able to select different difficulty levels for the game and understand what is the difference between them.
+    - There are four levels of difficulty in the game - Easy, Medium, Hard and Hardest. To make it easier for player, each difficulty level button has its own color, based on a color code that is mostly used in many other games, regarding difficulty levels choice. Difficulty is based on the range of numbers and number of attempts. The higher the difficulty, the greater is range and the fewer attempts.
+* As a first time user, I want to be able to easily navigate through the website.
+    - Website is easy to navigate as there are only several buttons on a welcome page (levels of difficulty) and a number input and submit button on a game page. When the game is over, "NEW GAME" button appears and redirect player to welcome page for new game choice. 
+* As a first time visitor, I want to enjoy design and staying on a website, because I want to spend some amount of time playing the game without distraction.
+    - For this game a mild blue and white color scheme were chosen. That keeps eyes not to get tired fast from the game and does not distract from the game. It allows player to spend available time playing the game, without the wish to close it, because of unappropriate colors.
+* As a first time visitor, I want to get feedback on my actions in game.
+    - On the welcome page there are "How to play?" button which opens a modal window with rules, that can be closed by clicking the big "X" in the top right corner or clicking on any other space outside the modal window. 
+    - Game can not be started without clicking on difficulty level, so to start the game, player needs to click on any difficulty level player wants.
+    - After difficulty button is clicked, player lands on a game screen with input field and "Check your answer" button. Above it player can see chosen difficulty and range of numbers, from which computer chose a random number to guess.
+    - On the default game page if input field is empty and player pushes the "Check your answer button", error message "Please enter a valid number!" will appear below and nothing will happen until player will enter some number and pushes the submit button.
+    - During the game, player will see previous guesses, how many attempts are left and if the last guess number was higer or lower as the number chosen by computer. 
+    - When the game is over after a win, player will see a green congratulations message and the button "NEW GAME" will apear to let the player to start a new game.
+    - When the game is over after a loss, that happens if there are no guess attempts left, player will see a message with a correct number and the button "NEW GAME" will appear to let the player to start a new game.
 
 # Deployment
 
@@ -208,7 +258,7 @@ This website is published using GitHub Pages. The procedure of deployment is wri
 7. In a couple of minutes above Build and deployment you will see a statement that "Your site is live at" and a link to your website.
     * The site was deployed to GitHub pages, live link is here: [Guess the number game on GitHub pages.](https://genagrig.github.io/guess-the-number-game/)
 
-## Creating a fork
+### Creating a fork
 
 1. Navigate to the [repository](https://github.com/GenaGrig/guess-the-number-game.git)
 2. In the top-right corner of the page click on the fork button and select create a fork.
@@ -216,7 +266,7 @@ This website is published using GitHub Pages. The procedure of deployment is wri
 4. Choose to copy only the main branch or all branches to the new fork.
 5. Click Create a Fork. A repository should appear in your GitHub.
 
-## Cloning a repository
+### Cloning a repository
 
 1. Navigate to the [repository](https://github.com/GenaGrig/guess-the-number-game.git)
 2. Click on the Code button on top of the repository and copy the link.
@@ -224,8 +274,23 @@ This website is published using GitHub Pages. The procedure of deployment is wri
 4. Type git clone and then paste the link.
 5. Press Enter to create your local clone.
 
-Continue with Credits
-Media - find the background source
-Acknowledgements
-Technologies and languages
+# Credits
+
+## Content
+
+* Font that is used on this website was taken from [Google Fonts](https://fonts.google.com/)
+* README file was written with help of following documents:
+    - Code Institute [README template](https://github.com/Code-Institute-Solutions/readme-template)
+    - GitHubs [Basic wrtiting and formating syntax](https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#headings)
+    - README from existing project from [Dayana-N](https://github.com/Dayana-N/portfolio-project-2-word-type/blob/main/README.md)
+* Main idea of the game and code samples were taken from [Guess the number game tutorial](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash#example_—_guess_the_number_game)
+* Modal window was created with help of [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
+* Background image was taken from free image website [freepik](https://www.freepik.com/free-photo/abstract-background-made-with-numbers_943259.htm)
+* Several ideas for game improvement was taken from this course by [Chris Dixon - JavaScript Fun Series! Build a Guess The Number Game!](https://www.youtube.com/playlist?list=PLj0t1MkWhlOkGdzGAL3aiocfhSgYB1alb)
+
+## Acknowledgements
+
+* I want to thank my mentor Maranatha Ilesanmi for good feedback and very useful advices that made my project more easier to understand and implement.
+* I want to thank members on our Slack community for giving feedback and showing their own projects that was inspiring in different ways.
+
 User stories and experience
