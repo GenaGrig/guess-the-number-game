@@ -222,6 +222,14 @@ No bugs were detected
 
     - The most complex function has a cyclomatic complexity value of 7 while the median is 1.
 
+## Lighthouse desktop
+
+![Lighthouse desktop](/assets/images/lighthouse-desktop.PNG)
+
+## Lighthouse mobile
+
+![Lighthouse mobile](/assets/images/lighthouse-mobile.PNG)
+
 ## Testing user stories 
 
 * As a first time visitor, I want easily understand the main purpose of the website.
