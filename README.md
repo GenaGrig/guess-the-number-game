@@ -208,7 +208,7 @@ No bugs were detected
 
 ## HTML validator result - PASS
 
-### [Result page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgenagrig.github.io%2Fguess-the-number-game%2F)
+### [HTML check result page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgenagrig.github.io%2Fguess-the-number-game%2F)
 
 ## JavaScript validator [JShint](https://jshint.com/) result - PASS
 
@@ -290,7 +290,7 @@ This website is published using GitHub Pages. The procedure of deployment is wri
 * README file was written with help of following documents:
     - Code Institute [README template](https://github.com/Code-Institute-Solutions/readme-template)
     - GitHubs [Basic writing and formatting syntax](https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#headings)
-    - README from existing project from [Dayana-N](https://github.com/Dayana-N/portfolio-project-2-word-type/blob/main/README.md)
+    - Hints and some structure from README from existing project [Dayana-N](https://github.com/Dayana-N/portfolio-project-2-word-type/blob/main/README.md)
 * Main idea of the game and code samples were taken from [Guess the number game tutorial](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash#example_—_guess_the_number_game)
 * Modal window was created with help of [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
 * Background image was taken from free image website [freepik](https://www.freepik.com/free-photo/abstract-background-made-with-numbers_943259.htm)
